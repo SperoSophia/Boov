@@ -14,7 +14,7 @@ namespace Boov
             lexer = new Lexer();
             lexer.AddDefinition(new TokenDefinition("(operator)", new Regex(@"\*|\/|\+|\-")));
             lexer.AddDefinition(new TokenDefinition("(literal)", new Regex(@"\d+")));
-            lexer.AddDefinition(new TokenDefinition("(white-space)", new Regex(@"\s+"), true)); 
+            lexer.AddDefinition(new TokenDefinition("(white-space)", new Regex(@"\s+"), true));  
         }
 
         public void Parse(string str)
